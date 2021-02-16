@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker</title>
+</head>
+<body>
+    <div>
+        <h2>Tracker</h2>
+        <form action="">
+            <p>
+                <label for="project">Project: </label>
+                <select name="project" id="project">
+                    <option value="project1">Project-1</option>
+                    <option value="project2">Project-2</option>
+                    <option value="project3">Project-3</option>
+                    <option value="project4">Project-4</option>
+                </select>
+            </p>
+            <p>
+                <label for="shortdescription">Short Description:</label><br>
+                <input type="text" id="shortdescription" name="shortdescription" value=""><br>
+            </p>
+            <p>
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" rows="4" cols="50">
+                </textarea>
+            </p>
+
+            <p>
+                <label for="priority">Priority: </label>
+                <select name="priority" id="priority">
+                    <option value="priority1">P1</option>
+                    <option value="priority2">P2</option>
+                    <option value="priority3">P3</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="myfile">Select files:</label>
+                <input type="file" id="myfile" name="myfile" multiple>
+                <input type="submit" value="Upload">
+            </p>
+            <input type="submit" value="Create">
+            <button>Clear</button>
+            <button>Cancel</button>
+        </form> 
+ 
+    </div>
+</body>
+</html>

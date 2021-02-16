@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        }
+
+        td, th {
+        border: 1px solid #868686;
+        text-align: left;
+        padding: 8px;
+        }
+
+        tr:nth-child(even) {
+        background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tickets</h2>
+    <P>
+        <label for="project">Project: </label>
+        <select name="project" id="project">
+            <option value="project1">Project-1</option>
+            <option value="project2">Project-2</option>
+            <option value="project3">Project-3</option>
+            <option value="project4">Project-4</option>
+        </select>
+    </P>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Opened On</th>
+            <th>Short Description</th>
+            <th>Assignee</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Closed On</th>
+            <th>Efforts Required</th>
+            <th>Actions</th>
+        </tr>
+
+        <tr>
+            <form action="">
+                <td>REQ1234</td>
+                <td>02/16/2021 21:43</td>
+                <td>
+                    <a href="">
+                        Need an update button on home page
+                    </a>
+                </td> 
+                <td>
+                    <input type="text" id="shortdescription" name="shortdescription" value="Viki"><br>
+                </td>
+                <td>
+                    <select name="priority" id="priority">
+                        <option value="priority1">P1</option>
+                        <option value="priority2">P2</option>
+                        <option value="priority3">P3</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="status" id="status">
+                        <option value="new">New</option>
+                        <option value="closed">Closed</option>
+                        <option value="assiged">Assigned</option>
+                        <option value="inwork">In Work</option>
+                        <option value="pending">Pending</option>
+                        <option value="pending">Pending Customer</option>
+                    </select>
+                </td>
+                <td>02/16/2021 21:43</td>
+                <td>
+                    <input type="text" id="shortdescription" name="shortdescription" value="2" style="width: 30px;"> days
+                    <input type="text" id="shortdescription" name="shortdescription" value="8" style="width: 30px;"> hr
+                    <input type="text" id="shortdescription" name="shortdescription" value="45" style="width: 30px;"> min
+                </td>
+                <td>
+                    <input type="submit" value="Edit">
+                    <input type="submit" value="Save">
+                </td>
+            </form>
+        </tr>
+
+        <tr>
+            <td>REQ1213</td>
+            <td>02/16/2021 21:43</td>
+            <td>
+                <a href="">
+                    Please increase the size of the text
+                </a>
+            </td> 
+            <td>
+                <input type="text" id="shortdescription" name="shortdescription" value="Ananth"><br>
+            </td>
+            <td>
+                <select name="priority" id="priority">
+                    <option value="priority1">P1</option>
+                    <option value="priority2">P2</option>
+                    <option value="priority3">P3</option>
+                </select>
+            </td>
+            <td>
+                <select name="status" id="status">
+                    <option value="new">New</option>
+                    <option value="closed">Closed</option>
+                    <option value="assiged">Assigned</option>
+                    <option value="inwork">In Work</option>
+                    <option value="pending">Pending</option>
+                    <option value="pendingCustomer">Pending Customer</option>
+                </select>
+            </td>
+            <td>02/16/2021 21:43</td>
+            <td>
+                <input type="text" id="shortdescription" name="shortdescription" value="2" style="width: 30px;"> days
+                <input type="text" id="shortdescription" name="shortdescription" value="8" style="width: 30px;"> hr
+                <input type="text" id="shortdescription" name="shortdescription" value="45" style="width: 30px;"> min
+            </td>
+            <td>
+                <input type="submit" value="Edit">
+                <input type="submit" value="Save">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

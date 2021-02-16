@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Report :: Manager View</title>
+    <style>
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        }
+
+        td, th {
+        border: 1px solid #868686;
+        text-align: left;
+        padding: 8px;
+        }
+
+        tr:nth-child(even) {
+        background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <h2>Report</h2>
+    <form action="">
+        <p>
+            <label for="project">Project: </label>
+            <select name="project" id="project">
+                <option value="project1">Project-1</option>
+                <option value="project2">Project-2</option>
+                <option value="project3">Project-3</option>
+                <option value="project4">Project-4</option>
+            </select>
+            <label for="assignee">Assignee: </label>
+            <select name="assignee" id="assignee">
+                <option value="assignee1">Assignee1</option>
+                <option value="assignee2">Assignee2</option>
+                <option value="assignee3">Assignee3</option>
+                <option value="assignee4">Assignee4</option>
+                <option value="assignee5">Assignee5</option>
+            </select>
+            <label for="status">Status: </label>
+            <select name="status" id="status">
+                <option value="new">New</option>
+                <option value="closed">Closed</option>
+                <option value="assiged">Assigned</option>
+                <option value="inwork">In Work</option>
+                <option value="pending">Pending</option>
+                <option value="pending">Pending Customer</option>
+            </select>
+            <label for="from">From:</label>
+            <input type="datetime-local" id="from" name="from">
+            <label for="to">To:</label>
+            <input type="datetime-local" id="to" name="to">
+            <input type="submit">
+        </p>
+    </form>
+    <h2>Tickets</h2>
+    <p>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Opened On</th>
+                <th>Closed On</th>
+                <th>Efforts Spent</th>
+                <th>Time Taken</th>
+                <th>Short Description</th>
+                <th>Priority</th>
+                <th>Status</th>
+            </tr>
+    
+            <tr>
+                <td>REQ1234</td>
+                <td>02/16/2021 21:43</td>
+                <td>02/22/2021 21:43</td>
+                <td>72 hrs</td> 
+                <td>82 hrs</td> 
+                <td>
+                    <a href="">
+                        Need an update button on home page
+                    </a>
+                </td>
+                <td>P1</td> 
+                <td>Closed</td> 
+            </tr>
+
+            <tr>
+                <td>REQ1243</td>
+                <td>02/18/2021 21:43</td>
+                <td>02/23/2021 21:43</td>
+                <td>12 hrs</td> 
+                <td>20 hrs</td> 
+                <td>
+                    <a href="">
+                        Please provide a submit button at the end
+                    </a>
+                </td>
+                <td>P2</td> 
+                <td>New</td> 
+            </tr>
+      
+        </table>
+    </p>
+    
+    <p>
+        <p>
+            Total Efforts Spent: 200 hrs
+        </p>
+        <p>
+            Total Time Taken: 224 hrs
+        </p>
+    </p>
+
+    <p>
+        <input type="submit" value="Export PDF">
+        <input type="submit" value="Export CSV">
+    </p>
+</body>
+</html>
